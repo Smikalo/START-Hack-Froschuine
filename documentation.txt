@@ -1,0 +1,28 @@
+1) Cashier
+The cash register is an Android phone connected to the internet with a working nfc function and a sim card. It must also have our application installed on it.
+
+2) Customer
+The customer can make payments and transfers using the cash register, for which he generally needs to install the application and to have access to nfc and a sim card. 
+In the case of android there is no urgent need for a SIM card, as all data can be transmitted to the cash register using nfc. But in the case of IOS part of the information must necessarily be transmitted by sms.
+
+3) Transaction
+The transaction is done in three stages:
+1. Request from the cash register
+After the merchant's request, the cash register starts transmitting via nfc the data about the phone number of its SIM card, the purchase price and the hashcode unique to this transaction and waits for the customer to bring his phone to read this information. 
+
+2. Customer confirmation
+The customer's phone, having read the data from the cash register via nfc, displays a request to confirm the transfer. 
+In case of IOS after confirmation of this request by the user, the signature of his e-wallet is transmitted by SMS message to the cashier's SIM card number for further processing of the transaction. 
+In case of android, after the customer's confirmation, the signature data is transmitted to the cashier via nfc to save on sms cost.
+The cash register in turn waits for payment confirmation from the user, checking incoming sms and reading the nfc signal.
+
+3. Transaction validity check
+Having received the data on the customer's wallet, the cash register performs the transaction via the Internet if the customer has enough money for it. After that, a message about the success of the transaction is sent back to the customer either by SMS or by nfc, depending on how the customer sent his confirmation to the cash register earlier. If the transaction is successful, the user's app changes the displayed balance in their account, and if not successful, it displays a lack of money message on the screen.
+
+Advantages of this solution:
+1) Due to the fact that the internet connection is only necessary for the cashier, the seller and the user can save on wifi, which covers the cost of SMS for most tariffs
+2) In regions with poor internet coverage, the cellular connection works faster than the internet, which makes payments more convenient
+3) In the case of Ammer, such a solution would be relatively easy to integrate into existing infrastructure. In addition, thanks to it, the load on the company's servers could be reduced somewhat, because some of the information is transmitted by sms between the buyer and the seller, rather than directly to the server.
+
+Disadvantage:
+Interaction on NFC between iOS and Android is possible only one-way, so the reverse transfer of data from iOS device via SMS is the cheapest suitable technician solution. Although the time and cost of making the payment is indeed longer than it would be for NFC. It was a compromise that had to be made.
