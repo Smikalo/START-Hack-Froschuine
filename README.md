@@ -8,6 +8,7 @@ Since this was our first hackathon experience, we couldn't finish everything by 
 P.S. For more detailed technical information on how the app was intended to function, please refer to the documentation.txt file.
 
 Our contacts:
+
 [Maksym Floria](https://www.linkedin.com/in/maksym-floria-9b1a64296?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app), floryan2206@gmail.com, https://github.com/TomatoTheVeg
 
 [Mykhailo Kozyrev](https://www.linkedin.com/in/misha-kozyrev-143410282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app), smrtkozyrev@gmail.com, https://github.com/Smikalo
