@@ -1,5 +1,5 @@
 # START-Hack-Forschuine🎓🐧
-This here is our team's first 24-hour hackathon project developed for START Hack Munich 2024, the Ammer Case.
+This here is our team's first 24-hour hackathon project developed for [START Hack Munich 2023](https://www.startmunich.de/road-to-start-hack), the [Ammer](https://www.ammer.group/) Case.
 
 We tried to design an app that could provide access to blockchain to the users from areas with bad wifi coverage. Instead of directly checking with the server for payment validation, the buyer's phone uses SMS or NFC to send necessary transaction data to the seller's phone. The app of the seller then checks if the money can be transferred and lets the buyer's phone know if the operation went well. In simple terms, the app shifts some data traffic from the internet to the telecommunication network, making transactions cheaper and more reliable.
 
